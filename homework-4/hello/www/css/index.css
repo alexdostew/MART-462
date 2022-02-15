@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    background-color: rgb(245, 243, 234);
+    color: black;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.card {
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: 0px 2px 9px 1px #00000030;
+    margin: 1rem auto;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img {
+    width: 100%;
+}
+
+.card-title {
+    padding: 10px;
+    font-size: 2rem;
+}
