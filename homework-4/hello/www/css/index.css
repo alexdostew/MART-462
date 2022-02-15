@@ -1,7 +1,47 @@
+@font-face {
+    font-family: D-Din;
+    src: url("css/D-DIN.otf") format("opentype");
+}
+
+@font-face {
+    font-family: D-Din;
+    font-weight: bold;
+    src: url("css/D-DINExp-Bold.otf") format("opentype");
+}
+
+
 body {
     margin: 0;
+    margin-top: 3rem;
     background-color: rgb(245, 243, 234);
     color: black;
+    font-family: D-Din;
+}
+
+a {
+    color:crimson;
+    font-weight: bold;
+}
+
+h1, .card-title {
+    font-family: D-Din;
+    font-weight: bold;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 3rem;
+    background-color: white;
+    box-shadow: 0px 2px 9px 1px #00000030;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+}
+
+.nav-item {
+    font-size: 1.5rem;
 }
 
 .container {
@@ -32,4 +72,9 @@ body {
 .card-title {
     padding: 10px;
     font-size: 2rem;
+}
+
+.card-content {
+    padding: 1rem;
+    font-size: 1.2rem;
 }
