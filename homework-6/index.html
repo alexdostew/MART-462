@@ -1,0 +1,20 @@
+<html>
+
+<head>
+  <script type="text/javascript" src="jquery.js"></script> 
+  
+  <script type="text/javascript"> 
+    $.getJSON("http://mart462.silverleaf-consulting.com/index_alex.php?callback=?", 
+    function(result) { 
+      for(var i in result) { 
+        document.write (i + ":" + result[i] + "<br/> ");  
+      } 
+    }); 
+  </script>
+
+</head>
+
+<body>
+</body>
+
+</html>
