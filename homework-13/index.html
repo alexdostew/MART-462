@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Image based tracking AR.js demo</title>
+    <!-- import aframe and then ar.js with image tracking / location based features -->
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+    <a-scene>
+        <a-assets timeout="30000">
+            
+            <a-asset-item id="spinosaurus"
+                src="https://cdn.glitch.com/324a5290-5aa7-4efc-92d6-ae0736433b12%2Fspinosaurus.glb?v=1576629861898">
+            </a-asset-item>
+            
+            
+        </a-assets>
+
+        <a-camera position="0 1.2 0"></a-camera>
+
+        <!-- 2D environment omitted for simplicity -->
+
+        <a-entity id="dino" position="-1 0 -3" scale="0.5 0.5 0.5">
+            <a-entity position="0 2.15 0" rotation="0 55 0" gltf-model="#spinosaurus" animation-mixer
+                shadow="cast: true; receive: false"></a-entity>
+        </a-entity>
+
+        <!-- Lights configuration omitted for simplicity -->
+    </a-scene>
+    </body>
+
+</html>
